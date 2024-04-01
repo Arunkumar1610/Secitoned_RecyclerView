@@ -72,7 +72,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.Arunkumar1610'
-            artifactId = 'testLibrary'
+            artifactId = 'Secitoned_RecyclerView'
             version = "1.0"
             pom {
                 description = 'DESCRIPTION'
