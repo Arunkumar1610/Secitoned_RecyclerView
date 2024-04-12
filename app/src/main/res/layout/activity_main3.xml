@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main3_scene"
+    tools:context=".activity.MainActivity3">
+
+
+    <FrameLayout
+        android:id="@+id/textViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/banner"
+        app:layout_constraintVertical_bias="0"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/settings_frag"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:gravity="center_horizontal|center"
+                            android:text="Settings"
+                            android:textColor="@color/black_30"
+                            android:textSize="20dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/acc_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_0"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="ACCOUNT"
+                        android:textColor="@color/black_30"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/acc_drop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_0"
+                        android:layout_alignRight="@id/acc_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/drop_down" />
+
+                    <View
+                        android:id="@+id/view_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/acc_text"
+                        android:layout_marginHorizontal="12dp"
+                        android:background="@color/green_10" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/acc_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_0"
+                        android:layout_margin="12dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/name_arr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Name"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/mobile_arr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/name_arr"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Moblie"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/email_arr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/mobile_arr"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="email"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/security_arr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/email_arr"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Security"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/name_acc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/name_arr"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Arunkumar"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/mobile_acc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/name_arr"
+                                android:layout_alignRight="@id/mobile_arr"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="+91 7010784625"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/email_acc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/mobile_arr"
+                                android:layout_alignRight="@id/email_arr"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="prarunkumar.mca@gmail.com"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/security_acc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/email_arr"
+                                android:layout_alignRight="@id/security_arr"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Protected"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/bene_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/acc_card"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="BENEFICIARY"
+                        android:textColor="@color/black_30"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/bene_drop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/acc_card"
+                        android:layout_alignRight="@id/bene_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/drop_down" />
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/bene_text"
+                        android:layout_marginHorizontal="12dp"
+                        android:background="@color/green_10" />
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/bene_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_1"
+                        android:layout_margin="12dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/empty_bene"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Add Beneficiary"
+                                android:textColor="@color/black_30"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:id="@+id/add_btn_bene"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/empty_bene"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/btn_shape"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginHorizontal="2dp"
+                                    android:src="@drawable/add" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginHorizontal="2dp"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:paddingRight="4dp"
+                                    android:text="ADD"
+                                    android:textColor="@color/white_50" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bene_card"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="INFORMATION"
+                        android:textColor="@color/black_30"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/info_drop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bene_card"
+                        android:layout_alignRight="@id/info_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/drop_down" />
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/info_text"
+                        android:layout_marginHorizontal="12dp"
+                        android:background="@color/green_10" />
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/info_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_2"
+                        android:layout_margin="12dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/support_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Support"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/about_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/support_tag"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="About Us"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/policy_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/about_tag"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Privacy Policy"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/refund_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/policy_tag"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Refund Policy"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/faq_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/refund_tag"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="FAQ's"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/share_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/faq_tag"
+                                android:layout_margin="8dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Share"
+                                    android:textColor="@color/black_30"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/arrow_forward" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/logout_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_card"
+                        android:layout_margin="12dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Log Out"
+                                android:textColor="#B71C1C"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/logout" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

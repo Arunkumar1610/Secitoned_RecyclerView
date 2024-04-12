@@ -1,4 +1,4 @@
-package com.example.section_recycler_view.service;
+package com.example.section_recycler_view.library;
 
 import android.content.Context;
 

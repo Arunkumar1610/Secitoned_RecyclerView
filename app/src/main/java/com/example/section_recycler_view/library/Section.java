@@ -1,4 +1,4 @@
-package com.example.section_recycler_view.service;
+package com.example.section_recycler_view.library;
 
 /**
  * Created by apple on 11/7/16.

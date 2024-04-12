@@ -6,12 +6,15 @@
     android:orientation="vertical">
 
     <TextView
+        android:layout_marginHorizontal="9dp"
+        android:gravity="center_vertical"
         android:id="@+id/section"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="16sp"
-        android:textSize="16sp"
+        android:layout_height="32dp"
+        android:text="16dp"
+        android:textSize="16dp"
         android:textStyle="bold"
-        android:background="#88424242"/>
+        android:fontFamily="@font/montserrat_regular"
+        />
 
 </LinearLayout>

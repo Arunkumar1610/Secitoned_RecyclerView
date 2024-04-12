@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_m"
+        android:title="Home"
+        
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item
+        android:id="@+id/beneficiary_m"
+        android:title="Beneficiary"
+        android:icon="@drawable/baseline_list_24"/>
+    <item
+        android:id="@+id/history_m"
+        android:title="History"
+        android:icon="@drawable/baseline_history_24"/>
+    <item
+        android:id="@+id/settings_m"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"/>
+</menu>
